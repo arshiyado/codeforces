@@ -35,6 +35,7 @@ void solve ()
     rem = cnt * arr[0] - brr[0]; 
     cnt += 1; 
     
+    for (int i = 1; i < n; i ++) {
         if (c <= rem) {
             ans = min(cnt, ans); 
             cout << ans << endl; 
