@@ -34,8 +34,7 @@ void solve ()
     cnt = (brr[0] + arr[0] - 1)/arr[0]; 
     rem = cnt * arr[0] - brr[0]; 
     cnt += 1; 
-    // cout << 0 << ": " << ans << " " << cnt << " " << rem << endl; 
-    for (int i = 1; i < n; i ++) {
+    
         if (c <= rem) {
             ans = min(cnt, ans); 
             cout << ans << endl; 
@@ -45,7 +44,7 @@ void solve ()
         ll q = c - rem; 
         ll t = (q + arr[i] - 1)/arr[i]; 
         ans = min(ans, cnt + t); 
-        // cout << i << ": " << t << " " << ans << " " << cnt << " " << rem << endl; 
+        
         if (i == n - 1) {
             break; 
         }
